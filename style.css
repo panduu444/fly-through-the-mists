@@ -1,0 +1,76 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    background:
+        radial-gradient(circle at 20% 20%, #34246b, transparent 35%),
+        radial-gradient(circle at 80% 80%, #073e68, transparent 35%),
+        linear-gradient(135deg, #050619, #10143a, #030711);
+}
+
+.game-container {
+    width: 100%;
+    max-width: 950px;
+    text-align: center;
+}
+
+h1 {
+    font-size: clamp(24px, 4vw, 38px);
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    color: #ffffff;
+    text-shadow: 0 0 15px #7d8cff;
+}
+
+.subtitle {
+    color: #b9c9ff;
+    margin-bottom: 18px;
+    font-size: 15px;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #697aff;
+    border-radius: 16px;
+    background: #080d29;
+    box-shadow:
+        0 0 20px #455cff,
+        0 0 55px rgba(62, 91, 255, 0.35);
+
+    touch-action: none;
+}
+
+.instructions {
+    margin-top: 15px;
+    color: #c5d5ff;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        letter-spacing: 1px;
+    }
+
+    .subtitle,
+    .instructions {
+        font-size: 12px;
+    }
+}
